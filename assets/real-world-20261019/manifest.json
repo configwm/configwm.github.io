@@ -1,0 +1,1138 @@
+{
+  "source": "vljepa_imagewam_style_comparison.pptx",
+  "slide": 6,
+  "source_sha256": "52d6facd58e6b374988574a1d44f11af743f18554665edfd4626fe3c9fb23b94",
+  "extraction": "Original 1024x1024 panels, lossless WebP. Place Cap clean panel updated from the matching blackbox r4 source; other 59 panels retain their original PPTX sources. No resizing or retouching.",
+  "tasks": [
+    {
+      "id": "dinosaur",
+      "label": "Move Dinosaur",
+      "prompt": "Use both hands to pick up a dinosaur on the right side and move it to the left side."
+    },
+    {
+      "id": "baskets",
+      "label": "Sort Objects",
+      "prompt": "Place multiple objects separately in different baskets."
+    },
+    {
+      "id": "button",
+      "label": "Press Button",
+      "prompt": "Press the red button with the right hand."
+    },
+    {
+      "id": "cap",
+      "label": "Place Cap",
+      "prompt": "Move the baseball cap to the top of the book."
+    },
+    {
+      "id": "kettle",
+      "label": "Close Kettle",
+      "prompt": "Push down on the lid of the kettle with the right hand to close it."
+    },
+    {
+      "id": "cocktail",
+      "label": "Make Cocktail",
+      "prompt": "Watch someone making a cocktail."
+    }
+  ],
+  "columns": [
+    "noisy",
+    "dinov2",
+    "ours-dinov2",
+    "dinov3",
+    "ours-dinov3",
+    "vjepa21",
+    "ours-vjepa21",
+    "lingbot",
+    "ours-lingbot",
+    "clean"
+  ],
+  "total_bytes": 20706936,
+  "images": [
+    {
+      "task": "dinosaur",
+      "column": "noisy",
+      "asset": "assets/real-world-20261019/dinosaur/noisy.webp",
+      "width": 1024,
+      "height": 1024,
+      "source_media": "ppt/media/image49.png",
+      "bytes": 307662,
+      "sha256": "1cd912084521133a5cf78a7ddd813a58dfca795aec656ac58d350ccf293b2e18",
+      "source_pixels_sha256": "43adc0612bcba740ed140dcdff25f3be932e4ddd25f552d65725639c6c74d9d5",
+      "original_figure_box": [
+        29,
+        120,
+        483,
+        576
+      ],
+      "mapping_mae": 2.688
+    },
+    {
+      "task": "dinosaur",
+      "column": "dinov2",
+      "asset": "assets/real-world-20261019/dinosaur/dinov2.webp",
+      "width": 1024,
+      "height": 1024,
+      "source_media": "ppt/media/image50.png",
+      "bytes": 429104,
+      "sha256": "35ea4ec2a07651c8e7d5da1895983b8023d1b2ad41221c8ceeafe79393c8601c",
+      "source_pixels_sha256": "5cfd661cd4d3d74799aec776949afba6eb8364a2839e8a1bc1cdf6b8aea190fd",
+      "original_figure_box": [
+        524,
+        120,
+        978,
+        575
+      ],
+      "mapping_mae": 2.929
+    },
+    {
+      "task": "dinosaur",
+      "column": "ours-dinov2",
+      "asset": "assets/real-world-20261019/dinosaur/ours-dinov2.webp",
+      "width": 1024,
+      "height": 1024,
+      "source_media": "ppt/media/image51.png",
+      "bytes": 370424,
+      "sha256": "dd0b63e1b63f38122f8b60b58305a432747e6afc88129ad05f2570818b67fd89",
+      "source_pixels_sha256": "6fb79ad7a4259c1d6b2216005b4868dd36b445afb4339b736d7fd5c5f9b7b585",
+      "original_figure_box": [
+        1019,
+        120,
+        1473,
+        575
+      ],
+      "mapping_mae": 2.074
+    },
+    {
+      "task": "dinosaur",
+      "column": "dinov3",
+      "asset": "assets/real-world-20261019/dinosaur/dinov3.webp",
+      "width": 1024,
+      "height": 1024,
+      "source_media": "ppt/media/image65.png",
+      "bytes": 342364,
+      "sha256": "34a4d797968dbfdb77b63c9d3a2bdde364312a647a4ac7a1f8a7db907a055cf7",
+      "source_pixels_sha256": "493089ac1cc3c5f6a4a5513e4657387a4ed386281c37f2818b80c117ecea4be3",
+      "original_figure_box": [
+        1509,
+        117,
+        1965,
+        571
+      ],
+      "mapping_mae": 3.575
+    },
+    {
+      "task": "dinosaur",
+      "column": "ours-dinov3",
+      "asset": "assets/real-world-20261019/dinosaur/ours-dinov3.webp",
+      "width": 1024,
+      "height": 1024,
+      "source_media": "ppt/media/image66.png",
+      "bytes": 281994,
+      "sha256": "ee32f6724249292b320155700a288a731141eda698089c4c1d9d6495d81ba193",
+      "source_pixels_sha256": "9a5a5d8a8191cb14df228f947a56fdd0630cd71ee3a6577dfa9ce6353c6b2896",
+      "original_figure_box": [
+        2004,
+        117,
+        2460,
+        571
+      ],
+      "mapping_mae": 3.069
+    },
+    {
+      "task": "dinosaur",
+      "column": "vjepa21",
+      "asset": "assets/real-world-20261019/dinosaur/vjepa21.webp",
+      "width": 1024,
+      "height": 1024,
+      "source_media": "ppt/media/image53.png",
+      "bytes": 476368,
+      "sha256": "63c53657f24ebb25a2cefd771acbeadfe1150c387586c285696ac3846b26f8aa",
+      "source_pixels_sha256": "6bbb71814fe8b162959de090a6143402679643c5afe4ee0b56fffb5e8374696d",
+      "original_figure_box": [
+        2498,
+        117,
+        2952,
+        571
+      ],
+      "mapping_mae": 1.985
+    },
+    {
+      "task": "dinosaur",
+      "column": "ours-vjepa21",
+      "asset": "assets/real-world-20261019/dinosaur/ours-vjepa21.webp",
+      "width": 1024,
+      "height": 1024,
+      "source_media": "ppt/media/image54.png",
+      "bytes": 372804,
+      "sha256": "93000ac3de09408703163da7e89063bf8abc05f590769fcce1a5a20166f48b41",
+      "source_pixels_sha256": "2c7f2ae7fc4d83fcfbb71c346d89fb364066c9d4bd10251682d70359efc7b8e5",
+      "original_figure_box": [
+        2993,
+        117,
+        3447,
+        571
+      ],
+      "mapping_mae": 1.371
+    },
+    {
+      "task": "dinosaur",
+      "column": "lingbot",
+      "asset": "assets/real-world-20261019/dinosaur/lingbot.webp",
+      "width": 1024,
+      "height": 1024,
+      "source_media": "ppt/media/image55.png",
+      "bytes": 348456,
+      "sha256": "159f28911cf0fa26d681136860bc06419557ea58d5f17a38dfd4209c21f46527",
+      "source_pixels_sha256": "d5a522306256d9d18136b792577a935afde2c3414e8f1b57141707749f4396db",
+      "original_figure_box": [
+        3495,
+        117,
+        3951,
+        571
+      ],
+      "mapping_mae": 3.565
+    },
+    {
+      "task": "dinosaur",
+      "column": "ours-lingbot",
+      "asset": "assets/real-world-20261019/dinosaur/ours-lingbot.webp",
+      "width": 1024,
+      "height": 1024,
+      "source_media": "ppt/media/image56.png",
+      "bytes": 315760,
+      "sha256": "fe8443b4fc06871fa1a45ea17ca94be6b520aa2d260e5b3640cd83dac9370b60",
+      "source_pixels_sha256": "6f6a1371bc338f9ac77e9287c056e971974d182377d5e7701df91cbc90a421c4",
+      "original_figure_box": [
+        3990,
+        117,
+        4446,
+        571
+      ],
+      "mapping_mae": 3.377
+    },
+    {
+      "task": "dinosaur",
+      "column": "clean",
+      "asset": "assets/real-world-20261019/dinosaur/clean.webp",
+      "width": 1024,
+      "height": 1024,
+      "source_media": "ppt/media/image52.png",
+      "bytes": 215348,
+      "sha256": "b0c8db9a1ec19db6ac26983a714291ea9571acb5bb43c433ae9a66dc7fd54d7f",
+      "source_pixels_sha256": "01f732a6bee576405030d3bbd3bc5b2bedd639871d643a0d14172e815be2e5e0",
+      "original_figure_box": [
+        4491,
+        117,
+        4947,
+        571
+      ],
+      "mapping_mae": 2.646
+    },
+    {
+      "task": "baskets",
+      "column": "noisy",
+      "asset": "assets/real-world-20261019/baskets/noisy.webp",
+      "width": 1024,
+      "height": 1024,
+      "source_media": "ppt/media/image57.png",
+      "bytes": 267254,
+      "sha256": "0cbc19f791d26e153ab907c78e4536bff698a74c8cff1b8174fbab0a4fbda145",
+      "source_pixels_sha256": "fe38d9d06a3ecee762c84b67a0ebc4234415af32a97e5cd4875472ab3bafffc0",
+      "original_figure_box": [
+        29,
+        714,
+        483,
+        1169
+      ],
+      "mapping_mae": 2.08
+    },
+    {
+      "task": "baskets",
+      "column": "dinov2",
+      "asset": "assets/real-world-20261019/baskets/dinov2.webp",
+      "width": 1024,
+      "height": 1024,
+      "source_media": "ppt/media/image63.png",
+      "bytes": 421000,
+      "sha256": "d9acd15b0dc8ae7865f1d7d22db7812f089b7179464a650f459b76dacbc53591",
+      "source_pixels_sha256": "76e78693d03216852baec583b52c5152e6913589f6b1c5e0c600a3b721d55553",
+      "original_figure_box": [
+        524,
+        715,
+        978,
+        1169
+      ],
+      "mapping_mae": 1.699
+    },
+    {
+      "task": "baskets",
+      "column": "ours-dinov2",
+      "asset": "assets/real-world-20261019/baskets/ours-dinov2.webp",
+      "width": 1024,
+      "height": 1024,
+      "source_media": "ppt/media/image64.png",
+      "bytes": 340060,
+      "sha256": "27a02cc965758bbc06750cab99faf6939b9e768841ca18e13c196df63e7715f6",
+      "source_pixels_sha256": "7f3128f5095006a8fd1a145030a10a7a08ad3a9daba9bb4b4ae24801a67db9a9",
+      "original_figure_box": [
+        1019,
+        715,
+        1473,
+        1169
+      ],
+      "mapping_mae": 1.126
+    },
+    {
+      "task": "baskets",
+      "column": "dinov3",
+      "asset": "assets/real-world-20261019/baskets/dinov3.webp",
+      "width": 1024,
+      "height": 1024,
+      "source_media": "ppt/media/image67.png",
+      "bytes": 318052,
+      "sha256": "647969085f4411d0a3c0c75ccacf7e78574b1862c8b3c114ee66112d6412d869",
+      "source_pixels_sha256": "dc157565474d42e4c5e727e67490b3f00b63dd69bfba7c67cdfd6efe24448346",
+      "original_figure_box": [
+        1509,
+        711,
+        1965,
+        1165
+      ],
+      "mapping_mae": 3.195
+    },
+    {
+      "task": "baskets",
+      "column": "ours-dinov3",
+      "asset": "assets/real-world-20261019/baskets/ours-dinov3.webp",
+      "width": 1024,
+      "height": 1024,
+      "source_media": "ppt/media/image68.png",
+      "bytes": 284988,
+      "sha256": "eb6f17a494f6118759e6c82cace61824ce5512ffc424a5144afcd9b24836707e",
+      "source_pixels_sha256": "d2fc8ade57aed82248328a8897e4e4548c9f36af3472aa2eb611294fafe5dbc4",
+      "original_figure_box": [
+        2004,
+        711,
+        2460,
+        1165
+      ],
+      "mapping_mae": 2.725
+    },
+    {
+      "task": "baskets",
+      "column": "vjepa21",
+      "asset": "assets/real-world-20261019/baskets/vjepa21.webp",
+      "width": 1024,
+      "height": 1024,
+      "source_media": "ppt/media/image59.png",
+      "bytes": 479998,
+      "sha256": "593d4a221ffcde05c7676217fa2c578da845e808af2526ea4b91a3cde5fb7567",
+      "source_pixels_sha256": "c45516a305a6e6a4ae8ad973f8ff406609426d9b91691f4eb1bb51faaa4a327d",
+      "original_figure_box": [
+        2498,
+        711,
+        2952,
+        1165
+      ],
+      "mapping_mae": 1.936
+    },
+    {
+      "task": "baskets",
+      "column": "ours-vjepa21",
+      "asset": "assets/real-world-20261019/baskets/ours-vjepa21.webp",
+      "width": 1024,
+      "height": 1024,
+      "source_media": "ppt/media/image60.png",
+      "bytes": 356262,
+      "sha256": "151818ab3091f2237fa4a8c84da8726957907a8936757cf1ab4eb9fb63c34b81",
+      "source_pixels_sha256": "9b834331080d37b57e8ee0d87fe6030d1226e3d5a8dd04fcf5212e52e464cd9d",
+      "original_figure_box": [
+        2993,
+        711,
+        3447,
+        1165
+      ],
+      "mapping_mae": 1.217
+    },
+    {
+      "task": "baskets",
+      "column": "lingbot",
+      "asset": "assets/real-world-20261019/baskets/lingbot.webp",
+      "width": 1024,
+      "height": 1024,
+      "source_media": "ppt/media/image61.png",
+      "bytes": 326806,
+      "sha256": "e477bbb76b35ab0691caf3074eb9967c1101a202ad95547971121152c344e873",
+      "source_pixels_sha256": "3c36177673733ac5953d1c487f0967b2025e34deed8e137d8aed8d17306059a2",
+      "original_figure_box": [
+        3495,
+        711,
+        3951,
+        1165
+      ],
+      "mapping_mae": 2.927
+    },
+    {
+      "task": "baskets",
+      "column": "ours-lingbot",
+      "asset": "assets/real-world-20261019/baskets/ours-lingbot.webp",
+      "width": 1024,
+      "height": 1024,
+      "source_media": "ppt/media/image62.png",
+      "bytes": 282384,
+      "sha256": "cdfd0e0073a48185584ee426504b877462c75d0f34edd70162ffb33677764bc4",
+      "source_pixels_sha256": "c858df7d4883cdf2a98383277c1aa12555906097e3398db75e123bcb49ecedc9",
+      "original_figure_box": [
+        3990,
+        711,
+        4446,
+        1165
+      ],
+      "mapping_mae": 2.608
+    },
+    {
+      "task": "baskets",
+      "column": "clean",
+      "asset": "assets/real-world-20261019/baskets/clean.webp",
+      "width": 1024,
+      "height": 1024,
+      "source_media": "ppt/media/image58.png",
+      "bytes": 173248,
+      "sha256": "115b94181895fc8ee4fe1d567ce1674abfaef9dd5312d97fa8b750f8bd4a1966",
+      "source_pixels_sha256": "097c82f1bbbf37892c7376ab48cc32717a4abc7f183e80132622af38aa7ee1eb",
+      "original_figure_box": [
+        4491,
+        711,
+        4947,
+        1165
+      ],
+      "mapping_mae": 2.546
+    },
+    {
+      "task": "button",
+      "column": "noisy",
+      "asset": "assets/real-world-20261019/button/noisy.webp",
+      "width": 1024,
+      "height": 1024,
+      "source_media": "ppt/media/image69.png",
+      "bytes": 264050,
+      "sha256": "006db2e6f0d73cd8238c44d9deb82cccdf04171db935cc501ff2fdbd7e0d3b7b",
+      "source_pixels_sha256": "aded08f72a4c279e437d96ffa770b4693510c379c37aeb601553c3e97a100c3e",
+      "original_figure_box": [
+        23,
+        1283,
+        477,
+        1737
+      ],
+      "mapping_mae": 1.711
+    },
+    {
+      "task": "button",
+      "column": "dinov2",
+      "asset": "assets/real-world-20261019/button/dinov2.webp",
+      "width": 1024,
+      "height": 1024,
+      "source_media": "ppt/media/image75.png",
+      "bytes": 485792,
+      "sha256": "750c19fda7608f94d9c3ecd19f9581470f1381e2bf78c508e6d9456c76cd481c",
+      "source_pixels_sha256": "c545c6e47069e0e1ade21fcc3a5127067a680ff16c79f22a7c120fb4615d9bfb",
+      "original_figure_box": [
+        518,
+        1283,
+        972,
+        1737
+      ],
+      "mapping_mae": 2.361
+    },
+    {
+      "task": "button",
+      "column": "ours-dinov2",
+      "asset": "assets/real-world-20261019/button/ours-dinov2.webp",
+      "width": 1024,
+      "height": 1024,
+      "source_media": "ppt/media/image76.png",
+      "bytes": 350656,
+      "sha256": "7263a96eb5ac1e53bb36e052b4a7f050fd40155fea4525c11f2ba10ca8d2b5d0",
+      "source_pixels_sha256": "f47c984e2604447200f8dd87336ceefc81d0db47f9e88abc80e9c175c06a9e8b",
+      "original_figure_box": [
+        1013,
+        1283,
+        1467,
+        1737
+      ],
+      "mapping_mae": 1.446
+    },
+    {
+      "task": "button",
+      "column": "dinov3",
+      "asset": "assets/real-world-20261019/button/dinov3.webp",
+      "width": 1024,
+      "height": 1024,
+      "source_media": "ppt/media/image77.png",
+      "bytes": 289688,
+      "sha256": "88ef53f36d337713046936ac5f465f528e59424e85f5d138530065bc304da390",
+      "source_pixels_sha256": "080bc00b721c3a299cb3f6b89c5ea7220a67de080802accb8cdb9af685f5c8d0",
+      "original_figure_box": [
+        1503,
+        1279,
+        1959,
+        1734
+      ],
+      "mapping_mae": 4.569
+    },
+    {
+      "task": "button",
+      "column": "ours-dinov3",
+      "asset": "assets/real-world-20261019/button/ours-dinov3.webp",
+      "width": 1024,
+      "height": 1024,
+      "source_media": "ppt/media/image78.png",
+      "bytes": 275158,
+      "sha256": "c03b40b57f035e034df3fabd51c9d213a492f98973525b8655b21a2724c8c9b2",
+      "source_pixels_sha256": "5dd3263a586023f61d926cf7a1867080320bf4961823e6a4e947f73c8173d6bd",
+      "original_figure_box": [
+        1998,
+        1279,
+        2454,
+        1734
+      ],
+      "mapping_mae": 4.332
+    },
+    {
+      "task": "button",
+      "column": "vjepa21",
+      "asset": "assets/real-world-20261019/button/vjepa21.webp",
+      "width": 1024,
+      "height": 1024,
+      "source_media": "ppt/media/image71.png",
+      "bytes": 476852,
+      "sha256": "958c33c00168e43954b9595a473b42df29479fc16f5ef2a668a242fc4ca8cd93",
+      "source_pixels_sha256": "47f59cd497738af9769c6efa728faa3467058af510a766c5399ba52e9bafb0de",
+      "original_figure_box": [
+        2493,
+        1279,
+        2949,
+        1734
+      ],
+      "mapping_mae": 6.201
+    },
+    {
+      "task": "button",
+      "column": "ours-vjepa21",
+      "asset": "assets/real-world-20261019/button/ours-vjepa21.webp",
+      "width": 1024,
+      "height": 1024,
+      "source_media": "ppt/media/image72.png",
+      "bytes": 376014,
+      "sha256": "dffe7e31276c10bbaa9a8646bf5df5156a3de3efca94538caa535b2eb7eab428",
+      "source_pixels_sha256": "600a39dbccadb125019087af43b295b744c75a72b04e3719fbe8d69e02530fd3",
+      "original_figure_box": [
+        2988,
+        1279,
+        3444,
+        1734
+      ],
+      "mapping_mae": 4.512
+    },
+    {
+      "task": "button",
+      "column": "lingbot",
+      "asset": "assets/real-world-20261019/button/lingbot.webp",
+      "width": 1024,
+      "height": 1024,
+      "source_media": "ppt/media/image73.png",
+      "bytes": 327754,
+      "sha256": "c29eeb33d1f6510f782f6e85fb1f9d63f154b14e4a965aef1ab11e31c71f9b6b",
+      "source_pixels_sha256": "eba56560268d94621cbcb0c54d1971c86f83819c00ea249aab2af404a1dacb30",
+      "original_figure_box": [
+        3489,
+        1279,
+        3945,
+        1734
+      ],
+      "mapping_mae": 3.754
+    },
+    {
+      "task": "button",
+      "column": "ours-lingbot",
+      "asset": "assets/real-world-20261019/button/ours-lingbot.webp",
+      "width": 1024,
+      "height": 1024,
+      "source_media": "ppt/media/image74.png",
+      "bytes": 285514,
+      "sha256": "d946fdbd09c4bded9751b2c65a4b9deba4fff90426afd32023a545dcc5828c10",
+      "source_pixels_sha256": "60ec0adb2be8b4db1e78a9db7a57b36a8f78c21f7dc15ac23f097ebe32cf290d",
+      "original_figure_box": [
+        3984,
+        1279,
+        4440,
+        1734
+      ],
+      "mapping_mae": 3.516
+    },
+    {
+      "task": "button",
+      "column": "clean",
+      "asset": "assets/real-world-20261019/button/clean.webp",
+      "width": 1024,
+      "height": 1024,
+      "source_media": "ppt/media/image70.png",
+      "bytes": 164730,
+      "sha256": "5c9aa24425d2973f271feda3a8b4068ec0c074effc37287339f3dee5cb492503",
+      "source_pixels_sha256": "291dcc6bf4bea0f1480866d63e0e7b90ea03818ccb58d5b8d921071b61cfa9bf",
+      "original_figure_box": [
+        4487,
+        1278,
+        4941,
+        1734
+      ],
+      "mapping_mae": 2.794
+    },
+    {
+      "task": "cap",
+      "column": "noisy",
+      "asset": "assets/real-world-20261019/cap/noisy.webp",
+      "width": 1024,
+      "height": 1024,
+      "source_media": "ppt/media/image79.png",
+      "bytes": 302984,
+      "sha256": "440cab9fdd6acd3317ad655fbd32b21d93720733a4ce848062baa891d173dce1",
+      "source_pixels_sha256": "629e857bb367bd3cfa83c706138512d5f25543ea45a3b500788510135f97ccdd",
+      "original_figure_box": [
+        23,
+        1867,
+        477,
+        2321
+      ],
+      "mapping_mae": 1.572
+    },
+    {
+      "task": "cap",
+      "column": "dinov2",
+      "asset": "assets/real-world-20261019/cap/dinov2.webp",
+      "width": 1024,
+      "height": 1024,
+      "source_media": "ppt/media/image84.png",
+      "bytes": 508380,
+      "sha256": "099264b33e5105fd828e403295afda3be403d73632232a755a9493113b359930",
+      "source_pixels_sha256": "11a9c8709032a102657a7327c8d5326fcf8bd909acfaee3b37184427fa886fdf",
+      "original_figure_box": [
+        518,
+        1867,
+        972,
+        2321
+      ],
+      "mapping_mae": 2.121
+    },
+    {
+      "task": "cap",
+      "column": "ours-dinov2",
+      "asset": "assets/real-world-20261019/cap/ours-dinov2.webp",
+      "width": 1024,
+      "height": 1024,
+      "source_media": "ppt/media/image85.png",
+      "bytes": 401470,
+      "sha256": "1162c5146827f691cdcb7d45bd79984cca2299dbb9749430f8115c54830b461e",
+      "source_pixels_sha256": "06be419483d6461130a06b7a48a0e4d11221d529ff40c9394887ed611b03acbd",
+      "original_figure_box": [
+        1013,
+        1867,
+        1467,
+        2321
+      ],
+      "mapping_mae": 1.255
+    },
+    {
+      "task": "cap",
+      "column": "dinov3",
+      "asset": "assets/real-world-20261019/cap/dinov3.webp",
+      "width": 1024,
+      "height": 1024,
+      "source_media": "ppt/media/image86.png",
+      "bytes": 362492,
+      "sha256": "c372f8e51127494b0c8e1f7d8784072906703742c399db6c6721c1f003d6a0c6",
+      "source_pixels_sha256": "392002e8c3f2990cc036cf11fedaa193a300e405e7c966e596a6b134da8843e1",
+      "original_figure_box": [
+        1503,
+        1862,
+        1959,
+        2316
+      ],
+      "mapping_mae": 3.176
+    },
+    {
+      "task": "cap",
+      "column": "ours-dinov3",
+      "asset": "assets/real-world-20261019/cap/ours-dinov3.webp",
+      "width": 1024,
+      "height": 1024,
+      "source_media": "ppt/media/image87.png",
+      "bytes": 328194,
+      "sha256": "3a3db0df44d51dcf3f80edc6e5a97a4fd00d0a76c4eda28905bb11c8adce11f0",
+      "source_pixels_sha256": "ae7a46f0436ed6408210dfa8c7098b7edd02cee3cd7ee85462c3c9250eadf10f",
+      "original_figure_box": [
+        1998,
+        1862,
+        2454,
+        2316
+      ],
+      "mapping_mae": 2.811
+    },
+    {
+      "task": "cap",
+      "column": "vjepa21",
+      "asset": "assets/real-world-20261019/cap/vjepa21.webp",
+      "width": 1024,
+      "height": 1024,
+      "source_media": "ppt/media/image80.png",
+      "bytes": 488976,
+      "sha256": "17bfc2075eb5d9ebad29b4e67a76d7fc09bac902e9cd15952fbbed1d8b42d226",
+      "source_pixels_sha256": "4bb1ba86c907184d54f378a5c27f277e3042296930b8d349da95fcc5c1a36cea",
+      "original_figure_box": [
+        2493,
+        1862,
+        2949,
+        2316
+      ],
+      "mapping_mae": 4.87
+    },
+    {
+      "task": "cap",
+      "column": "ours-vjepa21",
+      "asset": "assets/real-world-20261019/cap/ours-vjepa21.webp",
+      "width": 1024,
+      "height": 1024,
+      "source_media": "ppt/media/image81.png",
+      "bytes": 397238,
+      "sha256": "de201a6ff27890ba6d6edd48dc2773e2cf4dee42ef2955fa540dd523b95bf40a",
+      "source_pixels_sha256": "5550ce632253ea2337aabeac8ab4db27dc30c3d98abf0488756708c3f5bc75af",
+      "original_figure_box": [
+        2988,
+        1862,
+        3444,
+        2316
+      ],
+      "mapping_mae": 3.432
+    },
+    {
+      "task": "cap",
+      "column": "lingbot",
+      "asset": "assets/real-world-20261019/cap/lingbot.webp",
+      "width": 1024,
+      "height": 1024,
+      "source_media": "ppt/media/image82.png",
+      "bytes": 384398,
+      "sha256": "d3f287ffad8883c95d8741b5ec2e8a2148bde30d07d00881914d637d1d0f284e",
+      "source_pixels_sha256": "65eebcd78a911388a23c630ab0aaf5674925ebeb06ea1140e6d0bc1588e8933e",
+      "original_figure_box": [
+        3489,
+        1862,
+        3945,
+        2316
+      ],
+      "mapping_mae": 2.637
+    },
+    {
+      "task": "cap",
+      "column": "ours-lingbot",
+      "asset": "assets/real-world-20261019/cap/ours-lingbot.webp",
+      "width": 1024,
+      "height": 1024,
+      "source_media": "ppt/media/image83.png",
+      "bytes": 352096,
+      "sha256": "55fd3e6079c9efcae96bb4e9ea743c6e73ebe08de4c7e10f14fa6c8c49f681c0",
+      "source_pixels_sha256": "3f63227db9dfa1a8ab31e66958b848aed6cc501ba41aef213fc1dba5ce7f4697",
+      "original_figure_box": [
+        3984,
+        1862,
+        4440,
+        2316
+      ],
+      "mapping_mae": 2.396
+    },
+    {
+      "task": "cap",
+      "column": "clean",
+      "asset": "assets/real-world-20261019/cap/clean.webp",
+      "width": 1024,
+      "height": 1024,
+      "bytes": 258348,
+      "sha256": "13ec38efeb9a3524481990efcf3853dc0bb15b09227cbad126832b5f9441f37f",
+      "source_pixels_sha256": "d2139a3aeaf61ae369582d7b9e09516a719dbb1138a6b165eb85e739c43ab18c",
+      "original_figure_box": [
+        4487,
+        1862,
+        4941,
+        2316
+      ],
+      "mapping_mae": 1.55,
+      "source_file": "vljepa_six_cases_blackbox_r4_paper_scale/dinov2_giant/case_04_cap_to_book/clean_obs_box.png"
+    },
+    {
+      "task": "kettle",
+      "column": "noisy",
+      "asset": "assets/real-world-20261019/kettle/noisy.webp",
+      "width": 1024,
+      "height": 1024,
+      "source_media": "ppt/media/image88.png",
+      "bytes": 282872,
+      "sha256": "12971a32f03569fea95a012390bb743da07d4bb5402359fa1862db7b8c898071",
+      "source_pixels_sha256": "40d125bc9025b630a9d179e312b6ea4b0c065a0dd0a6911b128bc195358b40de",
+      "original_figure_box": [
+        18,
+        2435,
+        474,
+        2889
+      ],
+      "mapping_mae": 4.241
+    },
+    {
+      "task": "kettle",
+      "column": "dinov2",
+      "asset": "assets/real-world-20261019/kettle/dinov2.webp",
+      "width": 1024,
+      "height": 1024,
+      "source_media": "ppt/media/image94.png",
+      "bytes": 424496,
+      "sha256": "55053e0705820cc2dbc59ecf93e664b2df68097a20f29985035a0ccf01908aa6",
+      "source_pixels_sha256": "6be32e368ddd4aec490b289766c8e88d5879402de25938faf2db30efab2b6e7f",
+      "original_figure_box": [
+        513,
+        2435,
+        969,
+        2889
+      ],
+      "mapping_mae": 4.505
+    },
+    {
+      "task": "kettle",
+      "column": "ours-dinov2",
+      "asset": "assets/real-world-20261019/kettle/ours-dinov2.webp",
+      "width": 1024,
+      "height": 1024,
+      "source_media": "ppt/media/image95.png",
+      "bytes": 352366,
+      "sha256": "ebb57e60263052703f07a404f7a70eba025cd24418fd8f84eeddd87ef3e3ef22",
+      "source_pixels_sha256": "39bf48b9539b29fd55828b9740ca7ee6954e5eec07623501fdba5cd83329d5d6",
+      "original_figure_box": [
+        1008,
+        2435,
+        1464,
+        2889
+      ],
+      "mapping_mae": 3.236
+    },
+    {
+      "task": "kettle",
+      "column": "dinov3",
+      "asset": "assets/real-world-20261019/kettle/dinov3.webp",
+      "width": 1024,
+      "height": 1024,
+      "source_media": "ppt/media/image96.png",
+      "bytes": 287506,
+      "sha256": "75fb99bff45f34cbcbf70e3137d234a75ad4ffa8d5667f0857fe6454c6b9062c",
+      "source_pixels_sha256": "653907653b9e5a0fbc416b9fd7b2f7f0d904134d8db90c9bef09f7957fa1b70d",
+      "original_figure_box": [
+        1497,
+        2430,
+        1953,
+        2886
+      ],
+      "mapping_mae": 4.566
+    },
+    {
+      "task": "kettle",
+      "column": "ours-dinov3",
+      "asset": "assets/real-world-20261019/kettle/ours-dinov3.webp",
+      "width": 1024,
+      "height": 1024,
+      "source_media": "ppt/media/image97.png",
+      "bytes": 280058,
+      "sha256": "eae431d0e2638f58dfc2096eb767dbae90468fef61801e93e043870d23d971a7",
+      "source_pixels_sha256": "0a1294d4fd9611e41f3f454e30283dde6371ed8ca98d0cc47e70d22d560a7db0",
+      "original_figure_box": [
+        1992,
+        2430,
+        2448,
+        2886
+      ],
+      "mapping_mae": 4.308
+    },
+    {
+      "task": "kettle",
+      "column": "vjepa21",
+      "asset": "assets/real-world-20261019/kettle/vjepa21.webp",
+      "width": 1024,
+      "height": 1024,
+      "source_media": "ppt/media/image90.png",
+      "bytes": 480858,
+      "sha256": "9efe863a9879fce16c36cb54239c6e32d61165967b61557aa0c029a3a2e13d5e",
+      "source_pixels_sha256": "7e0a11f234bad8790bb068001101e34966e1380d589f3d78487f05c3eb55634c",
+      "original_figure_box": [
+        2487,
+        2430,
+        2943,
+        2886
+      ],
+      "mapping_mae": 6.125
+    },
+    {
+      "task": "kettle",
+      "column": "ours-vjepa21",
+      "asset": "assets/real-world-20261019/kettle/ours-vjepa21.webp",
+      "width": 1024,
+      "height": 1024,
+      "source_media": "ppt/media/image91.png",
+      "bytes": 362624,
+      "sha256": "5cdbb0a2822a3a0cfcd7d590c9fa53601ae7ff596a4955ec08f636d188806710",
+      "source_pixels_sha256": "83a0ed4d2fe8f86b662498316703321d33bf4066b1caa3f599b3cb02100b1a98",
+      "original_figure_box": [
+        2982,
+        2430,
+        3438,
+        2886
+      ],
+      "mapping_mae": 4.554
+    },
+    {
+      "task": "kettle",
+      "column": "lingbot",
+      "asset": "assets/real-world-20261019/kettle/lingbot.webp",
+      "width": 1024,
+      "height": 1024,
+      "source_media": "ppt/media/image92.png",
+      "bytes": 325956,
+      "sha256": "f38bdd37684b133a7a46c658e19a80f66f54009b0993cbf90abff10c65878437",
+      "source_pixels_sha256": "c50d4b3824c2464ec626d94b6f4ff5ce62a719c4b2e36e91d49f4bf18291b799",
+      "original_figure_box": [
+        3485,
+        2430,
+        3939,
+        2886
+      ],
+      "mapping_mae": 3.445
+    },
+    {
+      "task": "kettle",
+      "column": "ours-lingbot",
+      "asset": "assets/real-world-20261019/kettle/ours-lingbot.webp",
+      "width": 1024,
+      "height": 1024,
+      "source_media": "ppt/media/image93.png",
+      "bytes": 293250,
+      "sha256": "e0e2529a84dd91ba01a43194e6b2141354ef8df7de604aa69611c37b7735302c",
+      "source_pixels_sha256": "fb1d7383077eaa67b36aed4b68fb0a7740ea4d103ae3fcf650215e98f9cb70f4",
+      "original_figure_box": [
+        3980,
+        2430,
+        4434,
+        2886
+      ],
+      "mapping_mae": 3.12
+    },
+    {
+      "task": "kettle",
+      "column": "clean",
+      "asset": "assets/real-world-20261019/kettle/clean.webp",
+      "width": 1024,
+      "height": 1024,
+      "source_media": "ppt/media/image89.png",
+      "bytes": 193962,
+      "sha256": "5b6c413513dfe45f9dbb24452374ad7b6ab9f0ee703ed4d89d7bab3713844bda",
+      "source_pixels_sha256": "4712a1c992fe4d7c5c4856a25e4e5434f76f52b1e53a90f6f46ebda14fbaa7e5",
+      "original_figure_box": [
+        4482,
+        2430,
+        4938,
+        2886
+      ],
+      "mapping_mae": 5.909
+    },
+    {
+      "task": "cocktail",
+      "column": "noisy",
+      "asset": "assets/real-world-20261019/cocktail/noisy.webp",
+      "width": 1024,
+      "height": 1024,
+      "source_media": "ppt/media/image98.png",
+      "bytes": 357254,
+      "sha256": "8508e487b43ef4af19a128c702174ee0befe175fc625787013766e0c7c62f930",
+      "source_pixels_sha256": "1897eb686506530787959009f50f38e1b4eb1a9b639b44ae3e01f7c834028b20",
+      "original_figure_box": [
+        18,
+        3015,
+        474,
+        3471
+      ],
+      "mapping_mae": 7.457
+    },
+    {
+      "task": "cocktail",
+      "column": "dinov2",
+      "asset": "assets/real-world-20261019/cocktail/dinov2.webp",
+      "width": 1024,
+      "height": 1024,
+      "source_media": "ppt/media/image104.png",
+      "bytes": 429654,
+      "sha256": "2b8f63f2f64025de1bf933c41041ee4d63a9d181fedb45182772c8076bf22c44",
+      "source_pixels_sha256": "c53d53b80e1f6236f594a57c5cbf35a7a276b5e7415692b082d02e9540c066cc",
+      "original_figure_box": [
+        513,
+        3015,
+        969,
+        3471
+      ],
+      "mapping_mae": 6.577
+    },
+    {
+      "task": "cocktail",
+      "column": "ours-dinov2",
+      "asset": "assets/real-world-20261019/cocktail/ours-dinov2.webp",
+      "width": 1024,
+      "height": 1024,
+      "source_media": "ppt/media/image105.png",
+      "bytes": 360046,
+      "sha256": "e1e968213963e4d36674d6df5728ae984acb0431fe98a815eef2cee617361bed",
+      "source_pixels_sha256": "330885103c9c912e8b5c1f1625d181ab909fce3fac735dee2c1528067c389d80",
+      "original_figure_box": [
+        1008,
+        3015,
+        1464,
+        3471
+      ],
+      "mapping_mae": 4.247
+    },
+    {
+      "task": "cocktail",
+      "column": "dinov3",
+      "asset": "assets/real-world-20261019/cocktail/dinov3.webp",
+      "width": 1024,
+      "height": 1024,
+      "source_media": "ppt/media/image106.png",
+      "bytes": 354408,
+      "sha256": "3c822ae6bff90975142f585af77f415c64f849e2f3e995c0555abbe5324cf184",
+      "source_pixels_sha256": "f1033452112e040aa8f41baba1e8c92cb1aa1be15438b794b8beaacdb9d23def",
+      "original_figure_box": [
+        1498,
+        3010,
+        1953,
+        3465
+      ],
+      "mapping_mae": 2.806
+    },
+    {
+      "task": "cocktail",
+      "column": "ours-dinov3",
+      "asset": "assets/real-world-20261019/cocktail/ours-dinov3.webp",
+      "width": 1024,
+      "height": 1024,
+      "source_media": "ppt/media/image107.png",
+      "bytes": 294106,
+      "sha256": "f787219a08eeb6095c6a7abcfe7ebf98d08f8272f1625d7f1490cf3745956c71",
+      "source_pixels_sha256": "b196a593186a13f7cedb8621291d839a6cd6fd7e59cb0688287836485749583f",
+      "original_figure_box": [
+        1993,
+        3010,
+        2448,
+        3465
+      ],
+      "mapping_mae": 2.219
+    },
+    {
+      "task": "cocktail",
+      "column": "vjepa21",
+      "asset": "assets/real-world-20261019/cocktail/vjepa21.webp",
+      "width": 1024,
+      "height": 1024,
+      "source_media": "ppt/media/image100.png",
+      "bytes": 492058,
+      "sha256": "1adbae7de27023f5908c52a8eac328c29e256ff25a74de04d729fba1283e1d3a",
+      "source_pixels_sha256": "fa40b72ccb47252a66742385aa1200435594de7745ff6423724c309cb8615c82",
+      "original_figure_box": [
+        2488,
+        3010,
+        2943,
+        3465
+      ],
+      "mapping_mae": 3.937
+    },
+    {
+      "task": "cocktail",
+      "column": "ours-vjepa21",
+      "asset": "assets/real-world-20261019/cocktail/ours-vjepa21.webp",
+      "width": 1024,
+      "height": 1024,
+      "source_media": "ppt/media/image101.png",
+      "bytes": 362962,
+      "sha256": "b09787a3a343404ea9de5f4495ef26f7691de056d619243b6b8507647198473e",
+      "source_pixels_sha256": "b1a1c67138745789bc87f2eb4c13d7a867a14ad9afa19db095f0591448d0886f",
+      "original_figure_box": [
+        2983,
+        3010,
+        3438,
+        3465
+      ],
+      "mapping_mae": 2.362
+    },
+    {
+      "task": "cocktail",
+      "column": "lingbot",
+      "asset": "assets/real-world-20261019/cocktail/lingbot.webp",
+      "width": 1024,
+      "height": 1024,
+      "source_media": "ppt/media/image102.png",
+      "bytes": 348764,
+      "sha256": "1850258298da5b437ea6d17e44fdf3f5c34e4aabf58136355ded38131f8df5c9",
+      "source_pixels_sha256": "eb5271525a02122b5b0210badfc04cebfacf922ee4a983b91bef52810608d017",
+      "original_figure_box": [
+        3495,
+        3010,
+        3951,
+        3465
+      ],
+      "mapping_mae": 3.614
+    },
+    {
+      "task": "cocktail",
+      "column": "ours-lingbot",
+      "asset": "assets/real-world-20261019/cocktail/ours-lingbot.webp",
+      "width": 1024,
+      "height": 1024,
+      "source_media": "ppt/media/image103.png",
+      "bytes": 287692,
+      "sha256": "060caafdb95b4a0ed1f3ac890bdbd26146f7ada8718e5332b6507effc096127c",
+      "source_pixels_sha256": "83990215c55fc985ff0df72db469cc3f46be41a17d84586083744b6eff51e7b7",
+      "original_figure_box": [
+        3980,
+        3010,
+        4434,
+        3465
+      ],
+      "mapping_mae": 1.625
+    },
+    {
+      "task": "cocktail",
+      "column": "clean",
+      "asset": "assets/real-world-20261019/cocktail/clean.webp",
+      "width": 1024,
+      "height": 1024,
+      "source_media": "ppt/media/image99.png",
+      "bytes": 344924,
+      "sha256": "6933aaf3b0160f241c6a63423f77f07e2b086332e8214a733118121fca535963",
+      "source_pixels_sha256": "55d4ad85a9df3885062f87b7b460fa7b20feb2947a48a4d32b722a506b736652",
+      "original_figure_box": [
+        4482,
+        3010,
+        4938,
+        3465
+      ],
+      "mapping_mae": 6.413
+    }
+  ],
+  "reference_figure": {
+    "source": "images2/scaling2.png",
+    "sha256": "7af538c6814222e774d5acfc7bffb099064790f60732661dc6e047967e3afda5",
+    "verified_update": "Place Cap clean observation; other 59 panels unchanged."
+  }
+}

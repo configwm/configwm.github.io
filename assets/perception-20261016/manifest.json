@@ -1,0 +1,368 @@
+{
+  "source_figure": "query_decoding_additional.pdf (2026-10-16)",
+  "source_sha256": "adc3710ce6c26ce3d9875013d3222cc7fa7a14a294decaa71dc653cf0290c66e",
+  "extraction": "Original embedded JPEG streams, mapped by page placement; no rendering, crop, resize, or recompression.",
+  "total_bytes": 123150,
+  "images": [
+    {
+      "environment": "tworoom",
+      "name": "input_noisy",
+      "pdf_image": "Image229",
+      "native_size": [
+        160,
+        160
+      ],
+      "asset": "assets/perception-20261016/tworoom/input_noisy.jpg",
+      "bytes": 5282,
+      "sha256": "0841067a440bcd19c7856fb3732dfdee83892d85cf154d325ca7e3cff5434868"
+    },
+    {
+      "environment": "tworoom",
+      "name": "decoded_brown",
+      "pdf_image": "Image230",
+      "native_size": [
+        160,
+        160
+      ],
+      "asset": "assets/perception-20261016/tworoom/decoded_brown.jpg",
+      "bytes": 4373,
+      "sha256": "28b0dd53410768eb12d7c985a98dcf47d6a4bb09ccef223bf00cabe57d3c1045"
+    },
+    {
+      "environment": "tworoom",
+      "name": "decoded_yellow",
+      "pdf_image": "Image234",
+      "native_size": [
+        160,
+        160
+      ],
+      "asset": "assets/perception-20261016/tworoom/decoded_yellow.jpg",
+      "bytes": 4327,
+      "sha256": "85930595ee6038719f60762c92e2e0210407079b015a967d7fcb61719533ee0e"
+    },
+    {
+      "environment": "tworoom",
+      "name": "decoded_pink",
+      "pdf_image": "Image233",
+      "native_size": [
+        160,
+        160
+      ],
+      "asset": "assets/perception-20261016/tworoom/decoded_pink.jpg",
+      "bytes": 4342,
+      "sha256": "6241bdff55227bac1b95392f29eaea3112c52d8edadf6faa3a5304327ff5ec92"
+    },
+    {
+      "environment": "tworoom",
+      "name": "decoded_green",
+      "pdf_image": "Image232",
+      "native_size": [
+        160,
+        160
+      ],
+      "asset": "assets/perception-20261016/tworoom/decoded_green.jpg",
+      "bytes": 4376,
+      "sha256": "22ea9987697fcc468373b5d34946b3e90caf0f94bfc75755c1179c5c7ee0b749"
+    },
+    {
+      "environment": "tworoom",
+      "name": "decoded_cyan",
+      "pdf_image": "Image231",
+      "native_size": [
+        160,
+        160
+      ],
+      "asset": "assets/perception-20261016/tworoom/decoded_cyan.jpg",
+      "bytes": 4356,
+      "sha256": "94d729b3d3196ee7bb31be0a78597486345a2c8f124af0af44b28ff1cee6380f"
+    },
+    {
+      "environment": "tworoom",
+      "name": "decoded_orange",
+      "pdf_image": "Image238",
+      "native_size": [
+        160,
+        160
+      ],
+      "asset": "assets/perception-20261016/tworoom/decoded_orange.jpg",
+      "bytes": 4367,
+      "sha256": "cda1080249219aff03db71cb92394be0b6402efa2a747c624afc2dc1b9cc4af2"
+    },
+    {
+      "environment": "tworoom",
+      "name": "decoded_purple",
+      "pdf_image": "Image237",
+      "native_size": [
+        160,
+        160
+      ],
+      "asset": "assets/perception-20261016/tworoom/decoded_purple.jpg",
+      "bytes": 4341,
+      "sha256": "853f9cc205b230dad0075ba8fe0a45542ff959b74e81dfdd34d14f5ac6d343c5"
+    },
+    {
+      "environment": "tworoom",
+      "name": "decoded_red",
+      "pdf_image": "Image236",
+      "native_size": [
+        160,
+        160
+      ],
+      "asset": "assets/perception-20261016/tworoom/decoded_red.jpg",
+      "bytes": 4414,
+      "sha256": "67e10b54246d0e9ae805f00faa160045ceb40d4abb81563729026bb4633eb772"
+    },
+    {
+      "environment": "tworoom",
+      "name": "decoded_blue",
+      "pdf_image": "Image235",
+      "native_size": [
+        160,
+        160
+      ],
+      "asset": "assets/perception-20261016/tworoom/decoded_blue.jpg",
+      "bytes": 4404,
+      "sha256": "3945ede2cad4320dd4029d8a85e3446c245a041fbfa500df9b62b04a7bdc0378"
+    },
+    {
+      "environment": "pusht",
+      "name": "input_noisy",
+      "pdf_image": "Image56",
+      "native_size": [
+        224,
+        224
+      ],
+      "asset": "assets/perception-20261016/pusht/input_noisy.jpg",
+      "bytes": 10731,
+      "sha256": "497d2f1441cc800d81d0afa6a25470d179368a1753ca3a2c7f530de48bd6c68c"
+    },
+    {
+      "environment": "pusht",
+      "name": "decoded_brown",
+      "pdf_image": "Image57",
+      "native_size": [
+        224,
+        224
+      ],
+      "asset": "assets/perception-20261016/pusht/decoded_brown.jpg",
+      "bytes": 4053,
+      "sha256": "d732ff6aeaacc761ccd67735b4b6fd34b3f1e31d1dbb456d6b3387a0cb0aaede"
+    },
+    {
+      "environment": "pusht",
+      "name": "decoded_yellow",
+      "pdf_image": "Image61",
+      "native_size": [
+        224,
+        224
+      ],
+      "asset": "assets/perception-20261016/pusht/decoded_yellow.jpg",
+      "bytes": 3412,
+      "sha256": "5225019e06bdef80de045834ac76005df69629f342f0630321fa8e125d34d7b3"
+    },
+    {
+      "environment": "pusht",
+      "name": "decoded_pink",
+      "pdf_image": "Image60",
+      "native_size": [
+        224,
+        224
+      ],
+      "asset": "assets/perception-20261016/pusht/decoded_pink.jpg",
+      "bytes": 4046,
+      "sha256": "131abd5ec2cd402af87a42e66ae5e66198ecc0d5940fc41279bde5e4e240a719"
+    },
+    {
+      "environment": "pusht",
+      "name": "decoded_gray",
+      "pdf_image": "Image59",
+      "native_size": [
+        224,
+        224
+      ],
+      "asset": "assets/perception-20261016/pusht/decoded_gray.jpg",
+      "bytes": 3875,
+      "sha256": "643ccf0c19c838f316e4ed0a8828a9f20aab6e99cba728893821a8a72b23d8f1"
+    },
+    {
+      "environment": "pusht",
+      "name": "decoded_cyan",
+      "pdf_image": "Image58",
+      "native_size": [
+        224,
+        224
+      ],
+      "asset": "assets/perception-20261016/pusht/decoded_cyan.jpg",
+      "bytes": 4162,
+      "sha256": "4fff344352f950a01d3c44c4f63473814f38e14ab1ca95790ac24beaf102695f"
+    },
+    {
+      "environment": "pusht",
+      "name": "decoded_orange",
+      "pdf_image": "Image65",
+      "native_size": [
+        224,
+        224
+      ],
+      "asset": "assets/perception-20261016/pusht/decoded_orange.jpg",
+      "bytes": 4107,
+      "sha256": "b641ca77b547a14fda392ae4eb9a8e36b9bfbf7487bd39df1067c22a6fbbe212"
+    },
+    {
+      "environment": "pusht",
+      "name": "decoded_purple",
+      "pdf_image": "Image64",
+      "native_size": [
+        224,
+        224
+      ],
+      "asset": "assets/perception-20261016/pusht/decoded_purple.jpg",
+      "bytes": 4006,
+      "sha256": "be93de1c1a1a1ae4e6d6b62f534d7fbe3ac7b0626197959dc80a40485e20d41b"
+    },
+    {
+      "environment": "pusht",
+      "name": "decoded_red",
+      "pdf_image": "Image63",
+      "native_size": [
+        224,
+        224
+      ],
+      "asset": "assets/perception-20261016/pusht/decoded_red.jpg",
+      "bytes": 4251,
+      "sha256": "969594038f425cd1da56d509f02876af904a4804311fbea3ca786b1d2fbe95d7"
+    },
+    {
+      "environment": "pusht",
+      "name": "decoded_blue",
+      "pdf_image": "Image62",
+      "native_size": [
+        224,
+        224
+      ],
+      "asset": "assets/perception-20261016/pusht/decoded_blue.jpg",
+      "bytes": 4103,
+      "sha256": "434f0453893fb0336cc8872f02a58767c0ef5401c51a6a55ef1de2129f5375d5"
+    },
+    {
+      "environment": "cube",
+      "name": "input_noisy",
+      "pdf_image": "Image239",
+      "native_size": [
+        160,
+        160
+      ],
+      "asset": "assets/perception-20261016/cube/input_noisy.jpg",
+      "bytes": 5692,
+      "sha256": "59fe6f4039511d6ae369deb9a32e11e95b26c18296d307839e4c2e378cc3a115"
+    },
+    {
+      "environment": "cube",
+      "name": "decoded_silver",
+      "pdf_image": "Image240",
+      "native_size": [
+        160,
+        160
+      ],
+      "asset": "assets/perception-20261016/cube/decoded_silver.jpg",
+      "bytes": 3131,
+      "sha256": "4a1379e53317dc5c7a276212b6c4d784fc9fedc291dc6d95568198fc45ac22d7"
+    },
+    {
+      "environment": "cube",
+      "name": "decoded_yellow",
+      "pdf_image": "Image244",
+      "native_size": [
+        160,
+        160
+      ],
+      "asset": "assets/perception-20261016/cube/decoded_yellow.jpg",
+      "bytes": 3187,
+      "sha256": "8b9711048a0731debbafe6aba8b10bc93f4aed92a541450348caed918b737cb1"
+    },
+    {
+      "environment": "cube",
+      "name": "decoded_pink",
+      "pdf_image": "Image243",
+      "native_size": [
+        160,
+        160
+      ],
+      "asset": "assets/perception-20261016/cube/decoded_pink.jpg",
+      "bytes": 3327,
+      "sha256": "0665205f798896f8b3205accded3e2be40f3e09629df8ff5e324bce0dd20bc54"
+    },
+    {
+      "environment": "cube",
+      "name": "decoded_green",
+      "pdf_image": "Image242",
+      "native_size": [
+        160,
+        160
+      ],
+      "asset": "assets/perception-20261016/cube/decoded_green.jpg",
+      "bytes": 2597,
+      "sha256": "8c032c84b1a94d61e6cadb5a5f10c92810bdbc5bea8d77e6ce7957369bc17d48"
+    },
+    {
+      "environment": "cube",
+      "name": "decoded_cyan",
+      "pdf_image": "Image241",
+      "native_size": [
+        160,
+        160
+      ],
+      "asset": "assets/perception-20261016/cube/decoded_cyan.jpg",
+      "bytes": 2927,
+      "sha256": "8d886d7e6ceac3df4bcc9397deabb247a90eec426037310eabca3da5481ac5ec"
+    },
+    {
+      "environment": "cube",
+      "name": "decoded_orange",
+      "pdf_image": "Image248",
+      "native_size": [
+        160,
+        160
+      ],
+      "asset": "assets/perception-20261016/cube/decoded_orange.jpg",
+      "bytes": 2864,
+      "sha256": "6773f612f982d405f0cc78de0bdeca579f46deb1ad6e23093b3d484036a24ee6"
+    },
+    {
+      "environment": "cube",
+      "name": "decoded_purple",
+      "pdf_image": "Image247",
+      "native_size": [
+        160,
+        160
+      ],
+      "asset": "assets/perception-20261016/cube/decoded_purple.jpg",
+      "bytes": 2557,
+      "sha256": "426c7a7d006830a8c99d7931eb03835b56042f9116faf2ab1816047e5958110a"
+    },
+    {
+      "environment": "cube",
+      "name": "decoded_red",
+      "pdf_image": "Image246",
+      "native_size": [
+        160,
+        160
+      ],
+      "asset": "assets/perception-20261016/cube/decoded_red.jpg",
+      "bytes": 3004,
+      "sha256": "80b12eee7f4ec5167a52f0210778729102c73016626aff2f83bb1bd3ae5c19e9"
+    },
+    {
+      "environment": "cube",
+      "name": "decoded_blue",
+      "pdf_image": "Image245",
+      "native_size": [
+        160,
+        160
+      ],
+      "asset": "assets/perception-20261016/cube/decoded_blue.jpg",
+      "bytes": 2536,
+      "sha256": "1e86bc02b9509ff9f615d8091d7e935f10aab41f712e31a2b77ccf45c00d6f25"
+    }
+  ]
+}

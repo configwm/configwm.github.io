@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ConfigWM | World Models with Configurable Perception</title>
+  <meta name="description" content="World Models with Configurable Perception. Task-conditioned states for planning in noisy worlds.">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles-v3.css?v=20261019-figures">
+  <script src="site-config.js?v=20261021-paper" defer></script>
+  <script src="app-v3.js?v=20261019-figures" defer></script>
+  <script src="real-world.js?v=20261019-figures" defer></script>
+  <script src="noisy-worlds.js?v=20261019-figures" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="topbar"><nav class="nav wrap" aria-label="Main navigation">
+    <a class="brand" href="#top">Config<span>WM</span></a>
+    <div class="nav-links"><a href="#overview">Video</a><a href="#worlds">Noisy Worlds</a><a href="#idea">Configurable Perception</a><a href="#method">Method</a><a href="#results">Results</a><a href="#real-world">Real-World Perception</a><a href="#citation">Citation</a></div>
+    <a class="nav-paper resource-link" data-resource="paper" role="link" aria-disabled="true"><img class="resource-icon" src="assets/arxiv-icon.svg" alt="" aria-hidden="true">Paper</a>
+  </nav></header>
+  <main id="main">
+    <section class="hero wrap" id="top" aria-labelledby="title">
+      <h1 id="title"><span class="project-name">Config<span>WM</span></span><span class="paper-title">World Models with<br><span class="perception-highlight">Configurable Perception</span></span></h1>
+      <div class="authors"><span>Yijun Shen<sup>1,*</sup></span><span>Delong Chen<sup>2,*</sup></span><span>Xianming Hu<sup>1</sup></span><span>Kai Zhang<sup>1,†</sup></span><span>Pascale Fung<sup>2</sup></span></div>
+      <p class="affiliations"><span><sup>1</sup> East China Normal University</span><span><sup>2</sup> HKUST</span></p>
+      <p class="author-notes"><span>* Equal contribution</span><span>† Corresponding author</span></p>
+      <a class="contact resource-link" data-resource="contact" role="link" aria-disabled="true">kzhang@cs.ecnu.edu.cn</a>
+      <div class="actions">
+        <a class="button primary resource-link" data-resource="paper" role="link" aria-disabled="true"><img class="resource-icon" src="assets/arxiv-icon.svg" alt="" aria-hidden="true">Paper</a>
+        <a class="button resource-link" data-resource="huggingface" role="link" aria-disabled="true"><img class="resource-icon" src="assets/huggingface-icon.svg" alt="" aria-hidden="true">Data</a>
+        <a class="button resource-link" data-resource="github" role="link" aria-label="GitHub Code" aria-disabled="true"><img class="resource-icon" src="assets/github-icon.svg" alt="" aria-hidden="true">Code</a>
+        <a class="button" href="#overview"><span aria-hidden="true">▷</span> Video</a><a class="button" href="#results"><img class="resource-icon" src="assets/results-icon.svg" alt="" aria-hidden="true">Results</a>
+      </div>
+    </section>
+    <section class="overview wrap" id="overview" aria-label="Project video">
+      <video id="overview-video" controls playsinline preload="metadata" poster="assets/video-poster.jpg" aria-label="ConfigWM project overview, 68 seconds"><source src="assets/configwm-overview.mp4" type="video/mp4">Your browser does not support embedded video. <a href="assets/configwm-overview.mp4">Download the overview.</a></video>
+    </section>
+
+    <section class="section band" id="worlds" aria-labelledby="worlds-heading"><div class="wrap">
+      <h2 id="worlds-heading">Noisy Worlds</h2>
+      <div class="noise-control"><label for="distraction">Distractor level <output id="distraction-value" for="distraction">8</output></label><input id="distraction" type="range" min="0" max="8" value="8" step="1" aria-valuetext="8 distractors" style="--progress:100%"><div class="range-labels" aria-hidden="true"><span>0</span><span>8</span></div></div>
+      <div class="world-grid">
+        <figure><div class="world-motion" data-environment="tworoom" data-loading="true" aria-busy="true"><video class="world-video" width="224" height="224" muted loop playsinline preload="none" disablepictureinpicture aria-label="Two-Room with 8 distractors" tabindex="-1"></video></div><figcaption>Two-Room</figcaption></figure>
+        <figure><div class="world-motion" data-environment="pusht" data-loading="true" aria-busy="true"><video class="world-video" width="224" height="224" muted loop playsinline preload="none" disablepictureinpicture aria-label="Push-T with 8 distractors" tabindex="-1"></video></div><figcaption>Push-T</figcaption></figure>
+        <figure><div class="world-motion" data-environment="cube" data-loading="true" aria-busy="true"><video class="world-video" width="224" height="224" muted loop playsinline preload="none" disablepictureinpicture aria-label="OGBench-Cube with 8 distractors" tabindex="-1"></video></div><figcaption>OGBench-Cube</figcaption></figure>
+      </div>
+      <div class="world-caption"><p class="caption">Same task. More distractors.</p><button id="world-playback" class="world-playback" type="button" aria-label="Pause environment videos" title="Pause videos" data-paused="false" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><path class="pause-icon" d="M8 6v12M16 6v12"/><path class="play-icon" d="m9 5 10 7-10 7Z"/></svg></button></div>
+      <span id="world-video-status" class="sr-only" role="status" aria-live="polite"></span>
+    </div></section>
+
+    <section class="section wrap" id="idea" aria-labelledby="idea-heading">
+      <h2 id="idea-heading">Configurable Perception</h2>
+      <div class="environment-tabs" role="tablist" aria-label="Query demonstration environment"><button id="env-tworoom" role="tab" data-query-environment="tworoom" aria-controls="query-panel" aria-selected="true" tabindex="0">Two-Room</button><button id="env-pusht" role="tab" data-query-environment="pusht" aria-controls="query-panel" aria-selected="false" tabindex="-1">Push-T</button><button id="env-cube" role="tab" data-query-environment="cube" aria-controls="query-panel" aria-selected="false" tabindex="-1">OGBench-Cube</button></div>
+      <div id="query-panel" role="tabpanel" aria-labelledby="env-tworoom">
+        <div class="query-demo">
+          <figure><figcaption>Input Observation</figcaption><div class="query-frame" data-state="loading" aria-busy="true"><img id="query-input" class="query-image" width="160" height="160" alt="Fixed Two-Room input observation with nine colored balls"></div></figure>
+          <div class="query-middle">
+            <div class="task-condition"><span class="query-label">Task</span><strong id="query-name">“Green”</strong><svg class="task-arrow" viewBox="0 0 24 40" aria-hidden="true" focusable="false"><path d="M12 3v31m-8-8 8 8 8-8"/></svg></div>
+            <div class="encoder-flow">
+              <svg class="flow-connector" viewBox="0 0 64 28" aria-hidden="true" focusable="false"><path d="M3 14h55M47 4l11 10-11 10"/></svg>
+              <div class="encoder">Configurable<br>Encoder <span aria-label="frozen">❄</span></div>
+              <svg class="flow-connector" viewBox="0 0 64 28" aria-hidden="true" focusable="false"><path d="M3 14h55M47 4l11 10-11 10"/></svg>
+            </div>
+          </div>
+          <figure><figcaption>Decoded State</figcaption><div class="query-frame" data-state="loading" aria-busy="true"><img id="query-output" class="query-image" width="160" height="160" alt="Recorded Two-Room decoded state for the Green task query"></div></figure>
+        </div>
+        <p id="query-load-error" class="query-load-error" hidden>Images could not load. <button id="query-retry" type="button">Retry</button></p>
+        <div id="query-controls" class="query-controls" role="group" aria-label="Task color query">
+          <button data-query-index="0" aria-pressed="false" style="--swatch:#946444"><i></i><span>Brown</span></button><button data-query-index="1" aria-pressed="false" style="--swatch:#dcc529"><i></i><span>Yellow</span></button><button data-query-index="2" aria-pressed="false" style="--swatch:#d155b0"><i></i><span>Pink</span></button><button data-query-index="3" aria-pressed="true" style="--swatch:#258657"><i></i><span>Green</span></button><button data-query-index="4" aria-pressed="false" style="--swatch:#0999ab"><i></i><span>Cyan</span></button><button data-query-index="5" aria-pressed="false" style="--swatch:#d57a22"><i></i><span>Orange</span></button><button data-query-index="6" aria-pressed="false" style="--swatch:#7853af"><i></i><span>Purple</span></button><button data-query-index="7" aria-pressed="false" style="--swatch:#bf4249"><i></i><span>Red</span></button><button data-query-index="8" aria-pressed="false" style="--swatch:#435c9c"><i></i><span>Blue</span></button>
+        </div>
+      </div>
+      <p class="caption">Same observation. Different task. Different state.</p>
+      <p class="sr-only" id="query-status" aria-live="polite">Recorded decoding results, not live inference. Two-Room, Green query.</p>
+    </section>
+
+    <section class="section method-section" id="method" aria-labelledby="method-heading"><div class="wrap wide-wrap">
+      <h2 id="method-heading">How ConfigWM Works</h2>
+      <figure class="paper-figure"><button class="figure-zoom" data-zoom="assets/originals/method.svg" data-title="ConfigWM training pipeline" aria-label="Enlarge the ConfigWM training pipeline"><img src="assets/originals/method.svg" width="1440" height="331" loading="lazy" alt="Train the configurable encoder, then freeze it and train action-conditioned world dynamics."></button><figcaption class="caption">Configure perception. Learn task-relevant dynamics.</figcaption></figure>
+    </div></section>
+
+    <section class="section wrap" id="results" aria-labelledby="results-heading">
+      <h2 id="results-heading">Planning in Noisy Worlds</h2>
+      <div class="result-tabs" role="tablist" aria-label="Result figures"><button id="tab-planning" role="tab" aria-selected="true" aria-controls="panel-planning" tabindex="0">Planning</button><button id="tab-representation" role="tab" aria-selected="false" aria-controls="panel-representation" tabindex="-1">State quality</button><button id="tab-query" role="tab" aria-selected="false" aria-controls="panel-query" tabindex="-1">Query matters</button></div>
+      <div id="panel-planning" role="tabpanel" aria-labelledby="tab-planning"><figure class="paper-figure"><button class="figure-zoom" data-zoom="assets/originals/planning_performance-20261019.svg" data-title="Matched planning performance" aria-label="Enlarge planning results"><img src="assets/originals/planning_performance-20261019.svg" width="2400" height="758" loading="lazy" alt="Planning success under increasing distraction; matched training and evaluation. Shading shows one standard deviation across seeds. Dotted lines show random policies."></button><figcaption class="caption">More distraction. Robust planning.</figcaption></figure></div>
+      <div id="panel-representation" role="tabpanel" aria-labelledby="tab-representation" hidden><figure class="paper-figure"><button class="figure-zoom" data-zoom="assets/originals/representation-20261019.svg" data-title="Physical-quantity probing and retrieval" aria-label="Enlarge representation results"><img src="assets/originals/representation-20261019.svg" width="2400" height="760" loading="lazy" alt="Left: physical-quantity probing with macro-average Pearson correlation. Right: distracted-to-clean Top-1 retrieval among 400 candidates. Higher is better."></button><figcaption class="caption">Preserve the task. Suppress the distraction.</figcaption></figure></div>
+      <div id="panel-query" role="tabpanel" aria-labelledby="tab-query" hidden><figure class="paper-figure query-result"><button class="figure-zoom" data-zoom="assets/originals/query_intervention.png" data-title="Planning with mismatched queries" aria-label="Enlarge query mismatch results"><img src="assets/originals/query_intervention.png" width="1998" height="1275" loading="lazy" alt="Planning success with correct and mismatched queries under otherwise fixed tasks, observations, models and planning procedures."></button><figcaption class="caption">Change the query. Change the outcome.</figcaption></figure></div>
+    </section>
+
+    <section class="section band" id="real-world" aria-labelledby="realworld-heading"><div class="wrap wide-wrap">
+      <h2 id="realworld-heading">Real-World Perception</h2>
+      <div class="realworld-demo">
+        <div class="realworld-tasks" role="group" aria-label="Real-world task">
+        <button type="button" data-realworld-task="dinosaur" aria-pressed="true" aria-controls="realworld-panel">Move Dinosaur</button>
+        <button type="button" data-realworld-task="baskets" aria-pressed="false" aria-controls="realworld-panel">Sort Objects</button>
+        <button type="button" data-realworld-task="button" aria-pressed="false" aria-controls="realworld-panel">Press Button</button>
+        <button type="button" data-realworld-task="cap" aria-pressed="false" aria-controls="realworld-panel">Place Cap</button>
+        <button type="button" data-realworld-task="kettle" aria-pressed="false" aria-controls="realworld-panel">Close Kettle</button>
+        <button type="button" data-realworld-task="cocktail" aria-pressed="false" aria-controls="realworld-panel">Make Cocktail</button>
+        </div>
+        <h3 id="realworld-task-prompt">Use both hands to pick up a dinosaur on the right side and move it to the left side.</h3>
+        <div class="realworld-models" role="group" aria-label="Visual backbone">
+        <button type="button" data-realworld-model="dinov2" aria-pressed="true" aria-controls="realworld-panel">DINOv2</button>
+        <button type="button" data-realworld-model="dinov3" aria-pressed="false" aria-controls="realworld-panel">DINOv3</button>
+        <button type="button" data-realworld-model="vjepa21" aria-pressed="false" aria-controls="realworld-panel">V-JEPA 2.1</button>
+        <button type="button" data-realworld-model="lingbot" aria-pressed="false" aria-controls="realworld-panel">LingBot-Vision</button>
+        </div>
+        <div id="realworld-panel" class="realworld-panel" data-state="loading" aria-busy="true" aria-labelledby="realworld-task-prompt">
+          <figure class="realworld-card realworld-noisy"><figcaption id="realworld-noisy-label">Noisy Observation</figcaption><div class="realworld-frame"><img id="realworld-noisy" class="realworld-image" width="1024" height="1024" alt=""></div></figure>
+          <figure class="realworld-card realworld-baseline"><figcaption id="realworld-baseline-label">DINOv2</figcaption><div class="realworld-frame"><img id="realworld-baseline" class="realworld-image" width="1024" height="1024" alt=""></div></figure>
+          <figure class="realworld-card realworld-ours"><figcaption id="realworld-ours-label">Ours (DINOv2)</figcaption><div class="realworld-frame"><img id="realworld-ours" class="realworld-image" width="1024" height="1024" alt=""></div></figure>
+          <figure class="realworld-card realworld-clean"><figcaption id="realworld-clean-label">Clean Observation</figcaption><div class="realworld-frame"><img id="realworld-clean" class="realworld-image" width="1024" height="1024" alt=""></div></figure>
+        </div>
+        <div id="realworld-error" class="realworld-error" hidden><span>Images could not load.</span><button type="button" id="realworld-retry">Retry</button></div>
+        <span id="realworld-status" class="sr-only" role="status" aria-live="polite"></span>
+        <p class="caption">One principle. Across visual backbones.</p>
+      </div>
+    </div></section>
+
+    <section class="section wrap citation" id="citation" aria-labelledby="citation-heading"><h2 id="citation-heading">Citation</h2><div class="bibtex"><button id="copy-citation" hidden>Copy BibTeX</button><pre id="bibtex"></pre><span id="copy-status" class="sr-only" role="status"></span></div></section>
+  </main>
+  <footer class="wrap footer"><a class="brand" href="#top">Config<span>WM</span></a><a class="resource-link" data-resource="contact" role="link" aria-disabled="true">Contact</a></footer>
+  <dialog id="figure-dialog" aria-labelledby="figure-dialog-title"><div class="dialog-bar"><h2 id="figure-dialog-title">Figure</h2><button id="close-figure" aria-label="Close enlarged figure">Close ×</button></div><img id="enlarged-figure" alt="Enlarged paper figure"></dialog>
+</body>
+</html>

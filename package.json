@@ -1,0 +1,11 @@
+{
+  "name": "configwm-project",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Project website for World Models with Configurable Perception",
+  "type": "module",
+  "scripts": {
+    "start": "node preview.mjs",
+    "check": "node scripts/check.mjs"
+  }
+}
